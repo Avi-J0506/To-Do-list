@@ -5,7 +5,7 @@ import Header from "./myComponents/Header";
 import {Todos} from "./myComponents/Todos";
 import Footer from "./myComponents/Footer";
 import AddTodo from './myComponents/AddTodo'
-import {ToDoItem} from "./myComponents/ToDoItem.js"
+// import {ToDoItem} from "./myComponents/ToDoItem.js"
 import React, {useState} from 'react';
 
 function App() {
