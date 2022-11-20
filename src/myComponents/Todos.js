@@ -1,7 +1,7 @@
 import React from 'react'
 import { ToDoItem } from './ToDoItem'
 
-export const Todos = (props) =>{
+export const Todos = ({todos,onDelete}) =>{
   let myStyle ={
     minHeight: "70vh",
     margin: "10rem auto"
@@ -9,11 +9,11 @@ export const Todos = (props) =>{
   return (
     <div className="container my-3" style={myStyle}>
       <h3 className='my-2'>Todos List</h3>
-      {props.todos.length===0?"No todos to display":
-      props.todos.map((todo)=>{
+      {todos.length===0?"No todos to display":
+      todos.map((todo)=>{
         return( 
           <>
-        <ToDoItem todo={todo} key={todo.sno} onDelete={props.onDelete}/>
+        <ToDoItem todo={todo} key={todo.sno} onDelete={onDelete}/>
         <hr />
           </>
         )
